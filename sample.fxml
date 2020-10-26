@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="66.0" layoutY="88.0" text="id :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="119.0" text="Имя :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="151.0" text="Фамилия: ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="184.0" text="Возраст :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="238.0" text="\@Email :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="275.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" layoutX="226.0" layoutY="86.0" />
+      <TextField fx:id="txtName" layoutX="226.0" layoutY="117.0" />
+      <TextField fx:id="txtLastName" layoutX="226.0" layoutY="149.0" />
+      <TextField fx:id="txtAge" layoutX="226.0" layoutY="181.0" />
+      <TextField fx:id="txtEmail" layoutX="226.0" layoutY="235.0" />
+      <PasswordField fx:id="txtPassword" layoutX="226.0" layoutY="272.0" />
+      <Button layoutX="150.0" layoutY="355.0" mnemonicParsing="false" onAction="#pressInsert" prefHeight="30.0" prefWidth="85.0" text="Добавить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="248.0" layoutY="355.0" mnemonicParsing="false" onAction="#pressUpdate" prefHeight="30.0" prefWidth="96.0" text="Обновить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="359.0" layoutY="355.0" mnemonicParsing="false" onAction="#pressDelete" prefHeight="25.0" prefWidth="76.0" text="Удалить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="454.0" layoutY="355.0" mnemonicParsing="false" onAction="#pressSelect" prefHeight="30.0" prefWidth="96.0" text="Проверить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="txtResult" layoutX="428.0" layoutY="169.0" prefHeight="25.0" prefWidth="149.0" text="Статус :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onAction="#pressClear" text="Очистка">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</Pane>
